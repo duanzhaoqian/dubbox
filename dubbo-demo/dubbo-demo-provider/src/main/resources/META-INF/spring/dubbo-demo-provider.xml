@@ -22,7 +22,7 @@
 
     <dubbo:application name="demo-provider" owner="programmer" organization="dubbox"/>
 
-    <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
+    <dubbo:registry address="zookeeper://192.168.56.101:2181"/>
 
     <!--uncomment this if you want to test dubbo's monitor-->
     <!--<dubbo:monitor protocol="registry"/>-->
@@ -77,7 +77,6 @@
     <bean id="userRestService" class="com.alibaba.dubbo.demo.user.facade.UserRestServiceImpl">
         <property name="userService" ref="userService"/>
     </bean>
-
     <bean id="anotherUserRestService" class="com.alibaba.dubbo.demo.user.facade.AnotherUserRestServiceImpl">
         <property name="userService" ref="userService"/>
     </bean>
