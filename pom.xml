@@ -587,7 +587,7 @@
 				<configuration>
 					<verbose>true</verbose>
 					<fork>true</fork>
-					<executable>/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/bin/javac</executable>
+					<!-- <executable>/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/bin/javac</executable> -->
 					<source>${java_source_version}</source>
 					<target>${java_target_version}</target>
 					<encoding>${file_encoding}</encoding>
@@ -717,10 +717,10 @@
 			<timezone>+8</timezone>
 		</developer>
 	</developers>
-	<distributionManagement>
+	<!-- <distributionManagement>
 		<repository>
 			<id>ync_rep</id>
 			<url>http://172.10.3.40:8081/nexus/content/repositories/releases/</url>
 		</repository>
-	</distributionManagement>
+	</distributionManagement> -->
 </project>
